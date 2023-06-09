@@ -1,0 +1,140 @@
+# Project information
+site_name: The Gabba !
+site_url: https://gabbamendonca.github.io/blog/
+docs_dir: ./content
+site_author: Gabriel Mendonça
+site_description: Este é meu blog pessoal, posto coisa sobre mim.
+
+# Copyright
+copyright: Copyright &copy; 2023 - Gabriel Mendonça
+
+# Page tree   
+nav:
+  - ReadMe.gbb: index.md
+  - Feed: feed.md
+  - Programação :
+    - HTML/CSS : programacao/html_css.md
+    - Chariza : programacao/chariza.md
+  #   - JavaScript : programacao/javascript.md
+  # - Animes: animes.md
+  # - Artigos: artigos.md
+  # - Mangas: artigos.md
+  # - Filmes: artigos.md
+  # - Series: artigos.md
+  # - Musica: artigos.md
+  # - Teste : page.html
+
+# Plugins
+plugins:
+  - search
+  - roamlinks
+  - blogging:
+      meta_time_format: "%d-%m-%Y %H:%M"
+      time_format: "%d-%m-%Y %H:%M"
+      
+      dirs:
+        # - animes
+        # - artigos
+        - programacao/html_css
+      
+      categories:
+        - name: artigos
+          dirs:
+            - artigos 
+        
+        - name: animes
+          dirs:
+            - animes
+                
+        - name: html_css
+          dirs:
+            - programacao/html_css
+        
+        - name: chariza
+          dirs:
+            - programacao/html_css/chariza
+
+      # # Número de artigos em uma página, padrão: 10
+      # size: 5
+      # # Classificar do novo para o antigo, padrão
+      # sort: 
+      #   #new - Classifica do novo para o antigo, padrão
+      #   #old - Classifica do antigo para o novo
+      #   from: old
+      #   #creation - Ordena pela hora do primeiro commit, padrão
+      #   #revision - Ordena pela última hora de confirmação
+      #   by: creation
+      # # Desabilita paginação
+      # paging: true
+      # # Remova o rótulo 'total de páginas'
+      # show_total: true 
+      # # Use o conteúdo completo para descrição do blog
+      # full_content: false
+
+# Configuration
+theme:
+  name: material  
+  language: pt-BR
+
+  features:
+    - navigation.footer
+  
+  palette: 
+  
+    # Palette toggle for light mode
+    - scheme: default
+      primary: cyan
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cyan
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o light mode
+
+  font:
+    text: Space Mono
+    code: JetBrains Mono
+  
+  favicon: _imagens/favicon.ico
+  # logo: _imagens/logo_gabba_preto_sem_ponta.svg
+  logo: _imagens/logo_letra_g_preto_sem_ponta.svg
+  
+  # logo: _imagens/logo_letra_g_preto.svg
+  # logo: _imagens/logo_gabba_preto.svg
+  
+  # logo: _imagens/logo_gabba_cinza_70.svg
+  # logo: _imagens/logo_letra_g_preto_com_corte.svg
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/gabbamendonca/
+      name: Linkedin
+    - icon: fontawesome/brands/github
+      link: https://github.com/GabbaMendonca
+      name: GitHub
+
+# Extensions
+markdown_extensions:
+  - def_list
+  - footnotes
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji
+  - admonition
+  - toc:
+      permalink: true
