@@ -1,0 +1,3 @@
+# Feed
+
+{{ blog_content }}
