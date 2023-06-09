@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/feed/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/programacao/chariza/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/programacao/html_css/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/programacao/html_css/chariza/CH001_Arquitetura/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
