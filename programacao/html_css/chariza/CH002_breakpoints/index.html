@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A base do Chariza.">
+        <meta name="description" content="Settings - Pontos de interrupção e tamanho de tela.">
       
       
         <meta name="author" content="Gabriel Mendonça">
       
       
-        <link rel="canonical" href="https://gabbamendonca.github.io/blog/programacao/html_css/chariza/CH001_Arquitetura/">
+        <link rel="canonical" href="https://gabbamendonca.github.io/blog/programacao/html_css/chariza/CH002_breakpoints/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>CH001 - Ideias e arquitetura do Chariza - The Gabba !</title>
+        <title>CH002 - Breakpoints - The Gabba !</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introducao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CH001 - Ideias e arquitetura do Chariza
+              CH002 - Breakpoints
             
           </span>
         </div>
@@ -316,6 +321,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-first" class="md-nav__link">
+    Mobile First
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    Breakpoints
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -329,22 +363,110 @@
                   
 
 
-  <h1>CH001 - Ideias e arquitetura do Chariza</h1>
+  <h1>CH002 - Breakpoints</h1>
 
-<p>Quando estava pesquisando a maneira certa de escrever CSS me deparei com varias arquiteturas diferentes.</p>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>Estamos utilizando <a href="https://sass-lang.com" target="_blank">SASS</a> o que facilita muito na hora de codar.</p>
+<p>Seguindo o ITCSS temos uma primeira camada que foi nomeada de <em>settings</em> e aqui vamos guardar todas as variáveis que vão servir para configurar nosso framework.</p>
+<p>O primeiro arquivo sera o de <em>breakpoints</em>.</p>
+<p>Usei 3 frameworks de base para aprender como tratam esse tipo de assunto, o <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank">Bootstrap</a>, <a href="https://tailwindcss.com/docs/responsive-design" target="_blank">Tailwind</a> e <a href="https://bulma.io/documentation/overview/responsiveness/" target="_blank">Bulma</a>.</p>
+<h2 id="mobile-first">Mobile First<a class="headerlink" href="#mobile-first" title="Permanent link">&para;</a></h2>
+<p>É verdade que estou mais acostumado com o Bulma mais escolhi me basear por ele por causa do conceito <a href="https://desenvolvimentoparaweb.com/design/regras-web-design-responsivo/" target="_blank"><em>Mobile First</em></a> que consiste em programar 
+a partir do mobile para o desktop, modificando o layout somente quando a tela aumenta e não ao contrario.</p>
+<p>Usei as medidas de responsividade as própria <a href="https://bulma.io/documentation/overview/responsiveness/" target="_blank">documentação</a> do Bulma (já que são de um grande framework vão funcionar bem), as variáveis ficaram dessa forma :</p>
+<blockquote>
 <ul>
-<li>BEM</li>
-<li>ITCSS</li>
-<li>OSCSS</li>
-<li>RSCSS</li>
+<li>mobile: até de 768px.</li>
+<li>tablet: a partir 769px.</li>
+<li>desktop: a partir 1024px.</li>
+<li>widescreen: a partir 1216px.</li>
+<li>fullhd: a partir 1408px.</li>
 </ul>
-<p>Conforme fui testando e vendo o que cada uma tinha de bom a oferecer, me deparei com o <strong>RSCSS</strong> (Reasonable System for CSS Stylesheet Structure), uma jeito fácil e limpo de escrever e como a própria metodologia diz "sem perder a sanidade".</p>
-<p>Conheci através do fantástico artigo do Willian Justen - <a href="https://willianjusten.com.br/falando-sobre-rscss" target="_blank">Falando Sobre RSCSS</a>.</p>
-<p>A documentação oficial do Rico Sta. Cruz esta <a href="https://ricostacruz.com/rscss/" target="_blank">aqui</a>.</p>
-<p>Como o Willian explicou ela muito bem não explicar novamente aqui, passa lá no artigo dele para entender.
-Mais basicamente o Chariza sera baseado nesse conceitos.</p>
-<p>Já a organização dos arquivos fica por conta do <strong>ITCSS</strong> que ele também tem <a href="https://willianjusten.com.br/organizando-seu-css-com-itcss" target="_blank">artigo</a>.</p>
-<p>Outra grande inspiração que não posso deixar de citar foi o <a href="https://desenvolvimentoparaweb.com" target="_blank">DPW</a> e seu canal no <a href="https://www.youtube.com/channel/UCdHcHgSrWidiOg-mNFNB1Nw" target="_blank">YouTube</a> aprendi muito de CSS com o Tárcio Zemel e copiei muita coisa do <a href="https://desenvolvimentoparaweb.com/indicacoes/bfb2-boilerplate-front-end/" target="_blank">BFB2 - Basic Front Boilerplate</a> (vlw Tárcio !) a arquitetura <strong>ITCSS</strong> foi baseada no BFB.</p>
+</blockquote>
+<p>Como a nossa referencia é o mobile as <em>media query's</em> entram em ação conforme a tela vai se expandindo.</p>
+<p>A sequânica da menor medida para a maior ficou assim : </p>
+<blockquote>
+<p>Mobile - Tablet - Desktop - Widescreen - FullHD.</p>
+</blockquote>
+<h2 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">&para;</a></h2>
+<p>No site do DPW tem um artigos sobre <a href="https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/" target="_blank">breakpoints</a> e <a href="https://desenvolvimentoparaweb.com/css/media-queries/" target="_blank">media query</a>.</p>
+<p>Consideramos que tudo abaixo de 768px é mobile (celular ou tablet) e acima é desktop.</p>
+<p>Logo o arquivo com a medidas os breakpoints ficou assim :</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$mobile</span><span class="o">:</span><span class="w"> </span><span class="mi">768</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$tablet</span><span class="o">:</span><span class="w"> </span><span class="mi">769</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$desktop</span><span class="o">:</span><span class="w"> </span><span class="mi">1024</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$widescreen</span><span class="o">:</span><span class="w"> </span><span class="mi">1216</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$fullhd</span><span class="o">:</span><span class="w"> </span><span class="mi">1408</span><span class="kt">px</span><span class="err">;</span>
+
+<span class="c1">// up</span>
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">mobile</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">mobile</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">tablet</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">tablet</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">desktop</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">desktop</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">wide</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">widescreen</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">full</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">fullhd</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="c1">// between</span>
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">tablet-only</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">tablet</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="nn">#</span><span class="err">{$</span><span class="nt">desktop</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">1</span><span class="err">}</span><span class="o">)</span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">desktop-only</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">desktop</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="nn">#</span><span class="err">{$</span><span class="nt">widescreen</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">1</span><span class="err">}</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">wide-only</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">widescreen</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="nn">#</span><span class="err">{$</span><span class="nt">fullhd</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">1</span><span class="err">}</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="c1">// below</span>
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">desktop-down</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">desktop</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">wide-down</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">widescreen</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@mixin</span><span class="w"> </span><span class="nf">full-down</span><span class="w"> </span><span class="err">{</span>
+<span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">fullhd</span><span class="o">)</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="k">@content</span><span class="o">;</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div>
 
 
 
