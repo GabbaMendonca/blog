@@ -2,32 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://gabbamendonca.github.io/blog/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gabbamendonca.github.io/blog/feed/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://gabbamendonca.github.io/blog/programacao/chariza/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <loc>https://gabbamendonca.github.io/blog/livros/somos_todos_sacerdotes/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/livros/somos_todos_sacerdotes/a_qualifica%C3%A7%C3%A3o_do_sacerdocio__cap_3_01__o_padrao_levitico_da_adoracao/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/livros/somos_todos_sacerdotes/a_qualifica%C3%A7%C3%A3o_do_sacerdocio__cap_3_02__os_quarto_deuses_dos_filisteus/</loc>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gabbamendonca.github.io/blog/programacao/html_css/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://gabbamendonca.github.io/blog/programacao/html_css/chariza/CH001_Arquitetura/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <loc>https://gabbamendonca.github.io/blog/programacao/python/</loc>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://gabbamendonca.github.io/blog/programacao/html_css/chariza/CH002_breakpoints/</loc>
-         <lastmod>2023-06-10</lastmod>
+         <loc>https://gabbamendonca.github.io/blog/projetos/chariza/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/projetos/gabbarito/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/projetos/chariza/CH001_Arquitetura/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/projetos/chariza/CH002_breakpoints/</loc>
+         <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
