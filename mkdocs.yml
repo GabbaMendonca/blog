@@ -14,7 +14,12 @@ nav:
   - Feed: feed.md
   - Programação :
     - HTML/CSS : programacao/html_css.md
-    - Chariza : programacao/chariza.md
+    # - Python : programacao/python.md
+  - Projetos:  
+    - Chariza : projetos/chariza.md
+    # - Gabbarito : projetos/gabbarito.md
+  - Livros:
+    - Somos Todos Sacerdotes: livros/somos_todos_sacerdotes.md 
   #   - JavaScript : programacao/javascript.md
   # - Animes: animes.md
   # - Artigos: artigos.md
@@ -35,24 +40,47 @@ plugins:
       dirs:
         # - animes
         # - artigos
-        - programacao/html_css
+        # - programacao
+        - projetos/chariza
+        - livros/somos_todos_sacerdotes
       
       categories:
-        - name: artigos
-          dirs:
-            - artigos 
-        
-        - name: animes
-          dirs:
-            - animes
-                
+        # Programação                 
         - name: html_css
           dirs:
-            - programacao/html_css
+            - projetos/chariza
         
+        - name: python
+          dirs:
+            - livros/somos_todos_sacerdotes
+
+        # Projetos
         - name: chariza
           dirs:
-            - programacao/html_css/chariza
+            - projetos/chariza
+        
+        - name: gabbarito
+          dirs:
+            - projetos/gabbarito
+
+        # Livros
+        - name: somos_todos_sacerdotes
+          dirs:
+            - livros/somos_todos_sacerdotes
+
+        # - name: artigos
+        #   dirs:
+        #     - artigos 
+        
+        # - name: animes
+        #   dirs:
+        #     - animes
+
+
+        
+
+        
+
 
       # # Número de artigos em uma página, padrão: 10
       # size: 5
