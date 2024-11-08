@@ -36,7 +36,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://gabbamendonca.github.io/blog/programacao/artigos/PR001_programacao_funcional/</loc>
+         <loc>https://gabbamendonca.github.io/blog/programacao/shell/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/programacao/python/PR001_programacao_funcional/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/programacao/shell/SH001_criando_um_comando_no_shell/</loc>
          <lastmod>2024-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>

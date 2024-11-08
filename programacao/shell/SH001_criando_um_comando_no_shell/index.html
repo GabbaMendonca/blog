@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Resumo das páginas 67 a 75 do capítulo 3.">
+        <meta name="description" content="Criando um comando no shell do Windows para usar de atalho.">
       
       
         <meta name="author" content="Gabriel Mendonça">
       
       
-        <link rel="canonical" href="https://gabbamendonca.github.io/blog/livros/somos_todos_sacerdotes/a_qualifica%C3%A7%C3%A3o_do_sacerdocio__cap_3_02__os_quarto_deuses_dos_filisteus/">
+        <link rel="canonical" href="https://gabbamendonca.github.io/blog/programacao/shell/SH001_criando_um_comando_no_shell/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>SS002 - Capítulo 3 - A qualificação do Sacerdócio - Preparação do Coração e Adoração Pura - The Gabba !</title>
+        <title>SH001 -  Criando um comando/atalho no shell ? - The Gabba !</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#preparacao-do-coracao-e-adoracao-pura" class="md-skip">
+        <a href="#sh001-definindo-um-comando-no-shell-do-windows" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SS002 - Capítulo 3 - A qualificação do Sacerdócio - Preparação do Coração e Adoração Pura
+              SH001 -  Criando um comando/atalho no shell ?
             
           </span>
         </div>
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programacao/html_css/" class="md-nav__link">
+      <a href="../../html_css/" class="md-nav__link">
         HTML/CSS
       </a>
     </li>
@@ -289,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programacao/python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -303,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programacao/shell/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Shell
       </a>
     </li>
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../livros/somos_todos_sacerdotes/" class="md-nav__link">
         Somos Todos Sacerdotes
       </a>
     </li>
@@ -432,6 +432,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -440,51 +442,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#preparacao-do-coracao-e-adoracao-pura" class="md-nav__link">
-    Preparação do Coração e Adoração Pura
+  <a href="#prompt-de-comando" class="md-nav__link">
+    Prompt de Comando
   </a>
   
-    <nav class="md-nav" aria-label="Preparação do Coração e Adoração Pura">
+    <nav class="md-nav" aria-label="Prompt de Comando">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
-    Introdução
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preparacao-do-coracao" class="md-nav__link">
-    Preparação do Coração
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dagom-o-deus-da-provisao" class="md-nav__link">
-    Dagom - O Deus da Provisão
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#baal-o-deus-caprichoso" class="md-nav__link">
-    Baal - O Deus Caprichoso
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#astarote-a-deusa-do-sexo-e-da-fertilidade" class="md-nav__link">
-    Astarote - A Deusa do Sexo e da Fertilidade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#belzebu-o-deus-que-cria-e-alimenta-as-feridas" class="md-nav__link">
-    Belzebu - O Deus que Cria e Alimenta as Feridas
+  <a href="#criando-um-arquivo-batch-bat" class="md-nav__link">
+    Criando um arquivo batch (.bat):
   </a>
   
 </li>
@@ -495,44 +462,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    Conclusão
+  <a href="#powershell" class="md-nav__link">
+    PowerShell
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparacao-do-coracao_1" class="md-nav__link">
-    Preparação do Coração
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparação do Coração">
+    <nav class="md-nav" aria-label="PowerShell">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dagom-o-deus-da-provisao_1" class="md-nav__link">
-    Dagom - O deus da provisão
+  <a href="#criando-um-alias-temporario" class="md-nav__link">
+    Criando um alias temporário:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#baal-o-deus-caprichoso_1" class="md-nav__link">
-    Baal - O deus caprichoso
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#astarote-a-deusa-do-sexo-e-da-fertilidade_1" class="md-nav__link">
-    Astarote - A deusa do sexo e da fertilidade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#belzebu-o-deus-que-cria-e-alimenta-as-feridas_1" class="md-nav__link">
-    Belzebu - O deus que cria e alimenta as feridas
+  <a href="#criando-um-alias-permanente" class="md-nav__link">
+    Criando um alias permanente:
   </a>
   
 </li>
@@ -557,46 +503,75 @@
                   
 
 
-  <h1>SS002 - Capítulo 3 - A qualificação do Sacerdócio - Preparação do Coração e Adoração Pura</h1>
-
-<h2 id="preparacao-do-coracao-e-adoracao-pura">Preparação do Coração e Adoração Pura<a class="headerlink" href="#preparacao-do-coracao-e-adoracao-pura" title="Permanent link">&para;</a></h2>
+<h1 id="sh001-definindo-um-comando-no-shell-do-windows">SH001 - Definindo um comando no shell do Windows<a class="headerlink" href="#sh001-definindo-um-comando-no-shell-do-windows" title="Permanent link">&para;</a></h1>
+<p>Para definir um comando no shell do Windows (Prompt de Comando ou PowerShell), você pode criar um alias ou um script.</p>
+<p>Vou te mostrar como fazer isso em ambos os casos:</p>
 <hr />
-<h3 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h3>
-<p>No livro, a qualificação do sacerdócio é discutida em profundidade, destacando a importância da preparação do coração para manter a pureza da adoração. Este artigo aborda alguns dos principais pontos desse capítulo, enfatizando como diferentes divindades e crenças podem desviar o foco da verdadeira adoração a Deus.</p>
-<h3 id="preparacao-do-coracao">Preparação do Coração<a class="headerlink" href="#preparacao-do-coracao" title="Permanent link">&para;</a></h3>
-<p>Para manter a pureza da adoração, é essencial manter a pureza do coração. Em um momento de crise nacional com os filisteus, Samuel utilizou sua posição como sacerdote para chamar o povo a uma mudança de coração. Em vez de sugerir decretos ou estratégias civis, ele insistiu na volta à pura adoração.</p>
-<h3 id="dagom-o-deus-da-provisao">Dagom - O Deus da Provisão<a class="headerlink" href="#dagom-o-deus-da-provisao" title="Permanent link">&para;</a></h3>
-<p>A filosofia de que Deus existe como um Papai Noel cósmico pode nos fazer perder de vista o real significado da adoração. Dagom, o deus da provisão, representa essa visão distorcida. Quando acreditamos que Deus está lá apenas para satisfazer nossas necessidades materiais, perdemos o coração de Sua soberania.</p>
-<h3 id="baal-o-deus-caprichoso">Baal - O Deus Caprichoso<a class="headerlink" href="#baal-o-deus-caprichoso" title="Permanent link">&para;</a></h3>
-<p>O conceito de Baal apresenta Deus como um ser caprichoso. Se criarmos uma filosofia em nossas mentes de que Deus age de forma imprevisível e arbitrária, começaremos a ver Deus através da lente de Baal. Entretanto, é importante lembrar que Deus faz o que lhe agrada, mas se coloca misericordiosamente à disposição de Seus seguidores. Devemos abandonar a ideia de que Deus é caprichoso e compreender Sua natureza justa e misericordiosa.</p>
-<h3 id="astarote-a-deusa-do-sexo-e-da-fertilidade">Astarote - A Deusa do Sexo e da Fertilidade<a class="headerlink" href="#astarote-a-deusa-do-sexo-e-da-fertilidade" title="Permanent link">&para;</a></h3>
-<p>Astarote, a deusa do sexo e da fertilidade, simboliza as tentações carnais que podem desviar os homens do caminho espiritual. Para aqueles que amam Jesus e aspiram a aceitar o chamado de Deus para serem sacerdotes, é crucial fazer uma aliança com seus olhos, comprometendo-se a manter a pureza e a fidelidade.</p>
-<h3 id="belzebu-o-deus-que-cria-e-alimenta-as-feridas">Belzebu - O Deus que Cria e Alimenta as Feridas<a class="headerlink" href="#belzebu-o-deus-que-cria-e-alimenta-as-feridas" title="Permanent link">&para;</a></h3>
-<p>Belzebu representa as feridas e conflitos que muitas vezes criamos em nossas vidas. Santos são advertidos a não ultrapassarem os limites, controlando suas línguas e evitando criar suas próprias feridas. A confissão e a busca de cura em Deus são essenciais para manter a pureza e a integridade espiritual.</p>
-<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
-<p>A qualificação do sacerdócio exige uma profunda preparação do coração e uma dedicação à adoração pura. Ao compreender e evitar as distorções representadas por Dagom, Baal, Astarote e Belzebu, podemos nos aproximar mais de Deus e responder ao Seu chamado com um coração puro e uma adoração sincera.</p>
-<blockquote>
-<p>Versão do Copilot</p>
-</blockquote>
+<h2 id="prompt-de-comando">Prompt de Comando<a class="headerlink" href="#prompt-de-comando" title="Permanent link">&para;</a></h2>
+<p>Por enquato vamos apenas ver como criar um arquivo <code>.bat</code>.</p>
+<h3 id="criando-um-arquivo-batch-bat">Criando um arquivo batch (.bat):<a class="headerlink" href="#criando-um-arquivo-batch-bat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Abra um editor de texto (como o Bloco de Notas).</p>
+</li>
+<li>
+<p>Escreva o comando que deseja executar.</p>
+</li>
+<li>
+<p>Salve o arquivo com a extensão <code>.bat</code>.</p>
+</li>
+</ul>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">echo</span> off
+<span class="k">echo</span> Olá, isso é um comando personalizado!
+<span class="k">call</span> Comando que deseja aqui!
+</code></pre></div>
+<p><strong>Execute o arquivo batch</strong>:</p>
+<ul>
+<li>
+<p>Abra o Prompt de Comando.</p>
+</li>
+<li>
+<p>Navegue até o diretório onde o arquivo está salvo.</p>
+</li>
+<li>
+<p>Digite o nome do arquivo e pressione <code>Enter</code>.</p>
+</li>
+</ul>
 <hr />
-<blockquote>
-<p>Trecho original do livro</p>
-</blockquote>
-<h2 id="preparacao-do-coracao_1">Preparação do Coração<a class="headerlink" href="#preparacao-do-coracao_1" title="Permanent link">&para;</a></h2>
+<h2 id="powershell">PowerShell<a class="headerlink" href="#powershell" title="Permanent link">&para;</a></h2>
+<h3 id="criando-um-alias-temporario">Criando um alias temporário:<a class="headerlink" href="#criando-um-alias-temporario" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Abra o PowerShell.</p>
+</li>
+<li>
+<p>Use o cmdlet <code>New-Alias</code>.</p>
+</li>
+</ul>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre><span></span><code>New-Alias -Name MeuComando -Value C:\Caminho\Para\Seu\Script.ps1
+</code></pre></div>
 <hr />
-<p>Para manter a pureza da adoração é preciso manter a pureza do coração.</p>
-<p>Em um momento de crise nacional com os filisteus, Samuel usou sua posição como sacerdote para chamar o povo a uma mudança de coração.</p>
-<p>Ele não sugeriu decretos ou estratégias civis, ele insistiu na volta à pura adoração.</p>
-<h3 id="dagom-o-deus-da-provisao_1">Dagom - O deus da provisão<a class="headerlink" href="#dagom-o-deus-da-provisao_1" title="Permanent link">&para;</a></h3>
-<p>Quando abraçamos a filosofia de que Deus existe como um Papai Noel cósmico, em algum ponto nós perdemos o coração do Deus que é soberano, vamos perder de vista o real significado da adoração.</p>
-<h3 id="baal-o-deus-caprichoso_1">Baal - O deus caprichoso<a class="headerlink" href="#baal-o-deus-caprichoso_1" title="Permanent link">&para;</a></h3>
-<p>Se criamos em nossa mente uma filosofia de que nosso Deus é um Deus caprichoso, teremos um conceito de Baal sobre Deus.</p>
-<p>Deus faz o que lhe agrada, mas se coloca misericordiosamente à disposição.</p>
-<p>Devemos tirar de nós a ideia de que Deus é caprichoso.</p>
-<h3 id="astarote-a-deusa-do-sexo-e-da-fertilidade_1">Astarote - A deusa do sexo e da fertilidade<a class="headerlink" href="#astarote-a-deusa-do-sexo-e-da-fertilidade_1" title="Permanent link">&para;</a></h3>
-<p>Homens, se vocês amam a Jesus e aspiram aceitar o chamado de Deus para serem sacerdotes, comprometam-se a fazer uma aliança com os seus olhos.</p>
-<h3 id="belzebu-o-deus-que-cria-e-alimenta-as-feridas_1">Belzebu - O deus que cria e alimenta as feridas<a class="headerlink" href="#belzebu-o-deus-que-cria-e-alimenta-as-feridas_1" title="Permanent link">&para;</a></h3>
-<p>Santos, não passem dos limites. Controlem suas línguas. Não sejam culpados de criar suas próprias feridas. Vão a Deus e confessem. Sejam curados rapidamente.</p>
+<h3 id="criando-um-alias-permanente">Criando um alias permanente:<a class="headerlink" href="#criando-um-alias-permanente" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Adicione o cmdlet <code>New-Alias</code> ao seu perfil do PowerShell.</p>
+</li>
+<li>
+<p>Abra o PowerShell.</p>
+</li>
+<li>
+<p>Digite <code>notepad $PROFILE</code> e pressione <code>Enter</code>.</p>
+</li>
+</ul>
+<p>Isso abrirá seu perfil em um editor de texto.</p>
+<ul>
+<li>Adicione a linha <code>New-Alias</code> ao arquivo e salve.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>New-Alias -Name MeuComando -Value C:\Caminho\Para\Seu\Script.ps1
+</code></pre></div>
+<p>Agora, toda vez que você abrir o PowerShell, o alias estará disponível.</p>
 
 
 
