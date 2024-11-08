@@ -26,6 +26,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gabbamendonca.github.io/blog/musica/musica/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/musica/escalas/MS001_escala_maior/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/musica/escalas/MS002_penta_maior/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gabbamendonca.github.io/blog/musica/escalas/MS003_penta_menor/</loc>
+         <lastmod>2024-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gabbamendonca.github.io/blog/programacao/html_css/</loc>
          <lastmod>2024-11-08</lastmod>
          <changefreq>daily</changefreq>
