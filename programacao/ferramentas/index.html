@@ -6,29 +6,33 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Criando um comando no shell do Windows para usar de atalho.">
+        <meta name="description" content="Minhas ferramentas básicas para configurar o ambiente de desenvolvimento.">
       
       
         <meta name="author" content="Gabriel Mendonça">
       
       
-        <link rel="canonical" href="https://gabbamendonca.github.io/blog/programacao/shell/SH001_criando_um_comando_no_shell/">
+        <link rel="canonical" href="https://gabbamendonca.github.io/blog/programacao/ferramentas/">
       
       
+        <link rel="prev" href="../../feed/">
       
-      <link rel="icon" href="../../../_imagens/favicon.ico">
+      
+        <link rel="next" href="../html_css/">
+      
+      <link rel="icon" href="../../_imagens/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>SH001 -  Criando um comando/atalho no shell ? - The Gabba !</title>
+        <title>Configurando meu ambiente de programação com Poetry. - The Gabba !</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -44,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sh001-definindo-um-comando-no-shell-do-windows" class="md-skip">
+        <a href="#minhas-ferramentas" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -89,9 +93,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../.." title="The Gabba !" class="md-header__button md-logo" aria-label="The Gabba !" data-md-component="logo">
+    <a href="../.." title="The Gabba !" class="md-header__button md-logo" aria-label="The Gabba !" data-md-component="logo">
       
-  <img src="../../../_imagens/logo_letra_g_preto_sem_ponta.svg" alt="logo">
+  <img src="../../_imagens/logo_letra_g_preto_sem_ponta.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SH001 -  Criando um comando/atalho no shell ?
+              Configurando meu ambiente de programação com Poetry.
             
           </span>
         </div>
@@ -200,9 +204,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="The Gabba !" class="md-nav__button md-logo" aria-label="The Gabba !" data-md-component="logo">
+    <a href="../.." title="The Gabba !" class="md-nav__button md-logo" aria-label="The Gabba !" data-md-component="logo">
       
-  <img src="../../../_imagens/logo_letra_g_preto_sem_ponta.svg" alt="logo">
+  <img src="../../_imagens/logo_letra_g_preto_sem_ponta.svg" alt="logo">
 
     </a>
     The Gabba !
@@ -218,7 +222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         ReadMe.gbb
       </a>
     </li>
@@ -233,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feed/" class="md-nav__link">
+      <a href="../../feed/" class="md-nav__link">
         Feed
       </a>
     </li>
@@ -246,14 +250,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -262,7 +268,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Programação
@@ -273,11 +279,113 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ferramentas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ferramentas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Ferramentas
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparando-o-ambiente-com-poetry" class="md-nav__link">
+    Preparando o ambiente com poetry
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparando o ambiente com poetry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignr" class="md-nav__link">
+    IGNR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    PYTEST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-cov" class="md-nav__link">
+    PYTEST-COV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teskipy" class="md-nav__link">
+    TESKIPY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poetry" class="md-nav__link">
+    POETRY
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao" class="md-nav__link">
+    Documentação
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    Mkdocs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -289,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../html_css/" class="md-nav__link">
+      <a href="../html_css/" class="md-nav__link">
         HTML/CSS
       </a>
     </li>
@@ -303,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -317,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../shell/" class="md-nav__link">
         Shell
       </a>
     </li>
@@ -366,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projetos/chariza/" class="md-nav__link">
+      <a href="../../projetos/chariza/" class="md-nav__link">
         Chariza
       </a>
     </li>
@@ -415,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../livros/somos_todos_sacerdotes/" class="md-nav__link">
+      <a href="../../livros/somos_todos_sacerdotes/" class="md-nav__link">
         Somos Todos Sacerdotes
       </a>
     </li>
@@ -464,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../musica/musica/" class="md-nav__link">
+      <a href="../../musica/musica/" class="md-nav__link">
         Escalas
       </a>
     </li>
@@ -505,16 +613,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prompt-de-comando" class="md-nav__link">
-    Prompt de Comando
+  <a href="#preparando-o-ambiente-com-poetry" class="md-nav__link">
+    Preparando o ambiente com poetry
   </a>
   
-    <nav class="md-nav" aria-label="Prompt de Comando">
+    <nav class="md-nav" aria-label="Preparando o ambiente com poetry">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#criando-um-arquivo-batch-bat" class="md-nav__link">
-    Criando um arquivo batch (.bat):
+  <a href="#ignr" class="md-nav__link">
+    IGNR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    PYTEST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-cov" class="md-nav__link">
+    PYTEST-COV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teskipy" class="md-nav__link">
+    TESKIPY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poetry" class="md-nav__link">
+    POETRY
   </a>
   
 </li>
@@ -525,23 +661,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#powershell" class="md-nav__link">
-    PowerShell
+  <a href="#documentacao" class="md-nav__link">
+    Documentação
   </a>
   
-    <nav class="md-nav" aria-label="PowerShell">
+    <nav class="md-nav" aria-label="Documentação">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#criando-um-alias-temporario" class="md-nav__link">
-    Criando um alias temporário:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#criando-um-alias-permanente" class="md-nav__link">
-    Criando um alias permanente:
+  <a href="#mkdocs" class="md-nav__link">
+    Mkdocs
   </a>
   
 </li>
@@ -566,75 +695,85 @@
                   
 
 
-<h1 id="sh001-definindo-um-comando-no-shell-do-windows">SH001 - Definindo um comando no shell do Windows<a class="headerlink" href="#sh001-definindo-um-comando-no-shell-do-windows" title="Permanent link">&para;</a></h1>
-<p>Para definir um comando no shell do Windows (Prompt de Comando ou PowerShell), você pode criar um alias ou um script.</p>
-<p>Vou te mostrar como fazer isso em ambos os casos:</p>
+<h1 id="minhas-ferramentas">Minhas Ferramentas<a class="headerlink" href="#minhas-ferramentas" title="Permanent link">&para;</a></h1>
+<h2 id="preparando-o-ambiente-com-poetry">Preparando o ambiente com poetry<a class="headerlink" href="#preparando-o-ambiente-com-poetry" title="Permanent link">&para;</a></h2>
 <hr />
-<h2 id="prompt-de-comando">Prompt de Comando<a class="headerlink" href="#prompt-de-comando" title="Permanent link">&para;</a></h2>
-<p>Por enquato vamos apenas ver como criar um arquivo <code>.bat</code>.</p>
-<h3 id="criando-um-arquivo-batch-bat">Criando um arquivo batch (.bat):<a class="headerlink" href="#criando-um-arquivo-batch-bat" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>Abra um editor de texto (como o Bloco de Notas).</p>
-</li>
-<li>
-<p>Escreva o comando que deseja executar.</p>
-</li>
-<li>
-<p>Salve o arquivo com a extensão <code>.bat</code>.</p>
-</li>
-</ul>
-<p><strong>Exemplo:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">echo</span> off
-<span class="k">echo</span> Olá, isso é um comando personalizado!
-<span class="k">call</span> Comando que deseja aqui!
+<h3 id="ignr"><a href="https://github.com/Antrikshy/ignr.py">IGNR</a><a class="headerlink" href="#ignr" title="Permanent link">&para;</a></h3>
+<p>Gerador de .gitignore</p>
+<p>Instalar
+<div class="highlight"><pre><span></span><code>poetry add ignr --group dev
 </code></pre></div>
-<p><strong>Execute o arquivo batch</strong>:</p>
-<ul>
-<li>
-<p>Abra o Prompt de Comando.</p>
-</li>
-<li>
-<p>Navegue até o diretório onde o arquivo está salvo.</p>
-</li>
-<li>
-<p>Digite o nome do arquivo e pressione <code>Enter</code>.</p>
-</li>
-</ul>
+Criando o arquivo
+<div class="highlight"><pre><span></span><code>ignr -p python &gt; .gitignore
+</code></pre></div></p>
 <hr />
-<h2 id="powershell">PowerShell<a class="headerlink" href="#powershell" title="Permanent link">&para;</a></h2>
-<h3 id="criando-um-alias-temporario">Criando um alias temporário:<a class="headerlink" href="#criando-um-alias-temporario" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>Abra o PowerShell.</p>
-</li>
-<li>
-<p>Use o cmdlet <code>New-Alias</code>.</p>
-</li>
-</ul>
-<p><strong>Exemplo:</strong></p>
-<div class="highlight"><pre><span></span><code>New-Alias -Name MeuComando -Value C:\Caminho\Para\Seu\Script.ps1
+<h3 id="pytest"><a href="https://docs.pytest.org/en/7.2.x/">PYTEST</a><a class="headerlink" href="#pytest" title="Permanent link">&para;</a></h3>
+<p>Biblioteca de testes</p>
+<div class="highlight"><pre><span></span><code>poetry add pytest --group dev
+</code></pre></div>
+<h3 id="pytest-cov"><a href="https://pytest-cov.readthedocs.io/en/latest/">PYTEST-COV</a><a class="headerlink" href="#pytest-cov" title="Permanent link">&para;</a></h3>
+<p>Cobertura de testes</p>
+<div class="highlight"><pre><span></span><code>poetry add pytest-cov --group dev
 </code></pre></div>
 <hr />
-<h3 id="criando-um-alias-permanente">Criando um alias permanente:<a class="headerlink" href="#criando-um-alias-permanente" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>Adicione o cmdlet <code>New-Alias</code> ao seu perfil do PowerShell.</p>
-</li>
-<li>
-<p>Abra o PowerShell.</p>
-</li>
-<li>
-<p>Digite <code>notepad $PROFILE</code> e pressione <code>Enter</code>.</p>
-</li>
-</ul>
-<p>Isso abrirá seu perfil em um editor de texto.</p>
-<ul>
-<li>Adicione a linha <code>New-Alias</code> ao arquivo e salve.</li>
-</ul>
-<div class="highlight"><pre><span></span><code>New-Alias -Name MeuComando -Value C:\Caminho\Para\Seu\Script.ps1
+<h3 id="teskipy"><a href="https://github.com/illBeRoy/taskipy">TESKIPY</a><a class="headerlink" href="#teskipy" title="Permanent link">&para;</a></h3>
+<p>Automatização de Tarefas</p>
+<div class="highlight"><pre><span></span><code>poetry add taskipy --group dev
 </code></pre></div>
-<p>Agora, toda vez que você abrir o PowerShell, o alias estará disponível.</p>
+<hr />
+<h3 id="poetry"><a href="https://python-poetry.org">POETRY</a><a class="headerlink" href="#poetry" title="Permanent link">&para;</a></h3>
+<p>Gerenciador do pacotes Python.</p>
+<p>No windows funionou melhor instalar via pip (as veriaveis de ambiente do win são um saco):</p>
+<div class="highlight"><pre><span></span><code>pip install poetry
+</code></pre></div>
+<!-- ### Ferramenta do GitHub
+Ferramenta de linha de comando para o GitHub : 
+[gh](https://cli.github.com)
+
+Depois do git init
+<div class="highlight"><pre><span></span><code>gh repo create
+``` --&gt;
+
+&lt;!-- ## Code Style
+
+Sites da PEP8 :
+[EP8 - Oficial](https://peps.python.org/pep-0008/) | 
+[EP8](https://pep8.org)
+
+### Formatadores
+
+[BLUE](https://blue.readthedocs.io/en/latest/)
+</code></pre></div>
+poetry add --group dev blue
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+poetry show --only dev
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+poetry remove blue --group dev
+<div class="highlight"><pre><span></span><code>[BLACK](https://black.readthedocs.io/en/stable/)
+</code></pre></div>
+poetry add --group dev black
+<div class="highlight"><pre><span></span><code>[isort](https://pycqa.github.io/isort/)
+</code></pre></div>
+poetry add --group dev isort
+``` -->
+
+<h2 id="documentacao">Documentação<a class="headerlink" href="#documentacao" title="Permanent link">&para;</a></h2>
+<h3 id="mkdocs">Mkdocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
+<p>Mkdocs padrão 
+<div class="highlight"><pre><span></span><code>poetry add mkdocs --group doc
+</code></pre></div>
+Mkdocs com tema do material : 
+<a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+<div class="highlight"><pre><span></span><code>poetry add mkdocs-material --group doc
+</code></pre></div>
+<a href="https://mkdocstrings.github.io">mkdocstrings</a>
+<div class="highlight"><pre><span></span><code>poetry add mkdocstrings --group doc
+</code></pre></div>
+<a href="https://mkdocstrings.github.io/python/">mkdocstrings-python</a>
+<div class="highlight"><pre><span></span><code>poetry add mkdocstrings-python --group doc
+</code></pre></div></p>
 
 
 
@@ -651,6 +790,42 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../../feed/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Feed" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Feed
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../html_css/" class="md-footer__link md-footer__link--next" aria-label="Próximo: HTML/CSS" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                HTML/CSS
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -698,10 +873,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   </body>
